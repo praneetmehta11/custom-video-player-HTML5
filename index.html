@@ -1,0 +1,68 @@
+<!Doctype html>
+<html lang='en'>
+
+<head>
+    <meta charset="utf-8">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="vendor/fontawesome-free-5.8.1/css/all.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/video-player.css">
+    <title>Video player</title>
+</head>
+
+<body>
+    <center>
+        <h2>Video player</h2>
+    </center>
+    <div id="videoPlayer" class="custom-video-player">
+        <div id="videoContainer" class="custom-video-container">
+            <video id="customVideo" class="custom-video">
+            <source src="https://player.vimeo.com/external/194837908.sd.mp4?s=c350076905b78c67f74d7ee39fdb4fef01d12420&profile_id=164" type="video/mp4">
+            <!--source src="/videoPlayer/videos/sampleVideo.mp4" type="video/mp4"-->
+        </video>
+            <div id="playpausePoster" class="play-pause-poster">
+                <a id="playpausePosterButton" class="play-pause-poster-button">
+                    <i class="far fa-play-circle" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div id="videoControls" class="video-player-controls">
+                <div id="videoProgressBar" class="video-player-progress-bar">
+                    <div id="videoProgress" class="video-player-progress-value">
+                        <div id="videoProgressBarTip" class="video-player-progress-bar-tip">
+                            <i class="fa fa-circle" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-buttons">
+                    <button id="playpause" type="button" class="video-control-button">
+                    <i class="far fa-play-circle" aria-hidden="true"></i>
+                    </button>
+                    <button id="volume" type="button" class="video-control-button">
+                        <i class="fas fa-volume-up"></i>
+                    </button>
+                    <div id="volumeBar" class="volume-bar">
+                        <div id="volumeValue" class="volume-value">
+                            <div id="volumeBarTip" class="volume-bar-tip">
+                                <i class="fa fa-circle" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="videoTime" class="video-time">
+                        12:22/12:22
+                    </div>
+                    <button id="fullscreen" type="button" class="video-control-button" style="position:absolute;right:0;margin-right: 20px;">
+                        <i class="far fa-square"></i>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/video-player.js"></script>
+</body>
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/popper/popper.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+</html>
