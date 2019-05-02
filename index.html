@@ -14,11 +14,11 @@
         <h2>Video player</h2>
     </center>
     <div id="videoPlayer" class="custom-video-player">
-        <div id="videoContainer" class="custom-video-container">
-            <video id="customVideo" class="custom-video">
-            <source src="https://player.vimeo.com/external/194837908.sd.mp4?s=c350076905b78c67f74d7ee39fdb4fef01d12420&profile_id=164" type="video/mp4">
-            <!--source src="/videoPlayer/videos/sampleVideo.mp4" type="video/mp4"-->
-        </video>
+        <div id="videoPlayerContainer" class="custom-video-container">
+            <video id="customVideo" class="custom-video" preload="metadata">
+            <!-- source src="https://player.vimeo.com/external/194837908.sd.mp4?s=c350076905b78c67f74d7ee39fdb4fef01d12420&profile_id=164" type="video/mp4" -->
+            <source src="/videoPlayer/videos/sampleVideo1.mp4" type="video/mp4">
+            </video>
             <div id="playpausePoster" class="play-pause-poster">
                 <a id="playpausePosterButton" class="play-pause-poster-button">
                     <i class="far fa-play-circle" aria-hidden="true"></i>

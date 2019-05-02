@@ -1,4 +1,5 @@
 var video = document.getElementById("customVideo");
+var videoPlayerContainer = document.getElementById("videoPlayerContainer");
 var videoContainer = document.getElementById("videoContainer");
 var videoControls = document.getElementById("videoControls");
 var progress = document.getElementById("videoProgress");
@@ -45,25 +46,14 @@ function togglePlayPause() {
 
 function toggleFullscreen() {
     if (!document.fullscreenElement) {
-        video.requestFullscreen();
+        videoPlayerContainer.requestFullscreen();
+        videoControls.style.bottom = "0px";
     } else {
         if (document.exitFullscreen) {
             document.exitFullscreen();
+            videoControls.style.bottom = "6px";
         }
     }
-
-
-    /* 
-     *fit to the view port
-    var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-    var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-    if (isFullscreen == true) {
-        videoContainer.style.maxWidth = defalutsize;
-    } else {
-        videoContainer.style.maxWidth = w + "px";
-    }
-    isFullscreen = !isFullscreen;*/
-
 }
 
 fullscreen.onclick = function() {
